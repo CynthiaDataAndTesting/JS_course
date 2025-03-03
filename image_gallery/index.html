@@ -3,17 +3,352 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/bb0022e84a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>image gallery</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
+        <div class="nav">
+            <div class="nav-item">
+                <h1 id="titulo">Imágenes</h1>
+            </div>
+            <div class="nav-item">
+                <i class="fa-solid fa-cloud"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="main">
+        <ul class="list-group list-group-horizontal">
+            <li>
+                <img class="img-fluid" id="1" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid" id="2" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="3" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid" id="4" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="7" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid" id="8" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="9" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="10" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="11" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="12" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="13" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid" id="14" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="15" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="16" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="17" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="18" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="19" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid" id="20" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="21" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid" id="22" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="23" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="24" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="25" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid" id="26" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="27" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid" id="28" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="29" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="31" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid" id="32" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="33" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="34" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="35" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="36" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="37" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid" id="38" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="39" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="40" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="41" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="42" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="43" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid" id="44" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid" id="45" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid" id="46" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid" id="47" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="48" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid" id="49" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="50" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="51" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="52" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="53" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden " id="54" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="55" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="56" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="57" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="58" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="59" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden"  id="60" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="61" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="62" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="63" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="64" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="65" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="66" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="67" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="68" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="69" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="70" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="71" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="72" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="73" src="https://www.hola.com/horizon/square/3784253a800b-segovia-invierno-nieve-t.jpg?im=Resize=(640),type=downsize" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="74" src="https://img.lovepik.com/photo/50199/5177.jpg_wh860.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="75" src="https://media.istockphoto.com/id/108268463/es/foto/africana-en-la-puesta-de-sol-de-savannah.jpg?s=612x612&w=0&k=20&c=_h9RGI93q6PTN1h_ycVEgL5KnVXcyvxdNQScCrFV3ko=">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="76" src="https://concepto.de/wp-content/uploads/2019/04/estepa-argentina-e1555616596817.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="77" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuFj8pQHnMXxILAnYv1I6GRigGjIr24guwA&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="78" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCCCTov0JGs1zvaZDeGvdn9BFRQVSxSaF7A&s">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="79" src="https://plus.unsplash.com/premium_photo-1709579654090-3f3ca8f8416b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJhbGV6YSUyMHBhaXNhamV8ZW58MHx8MHx8fDA%3D" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="80" src="https://i.pinimg.com/736x/ac/53/c7/ac53c746c0b570df28f47c53f84657e6.jpg" >
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="81" src="https://img.freepik.com/foto-gratis/hermosa_1203-2633.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="82" src="https://elecodigital.com.uy/wp-content/uploads/2021/07/bariloche.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="83" src="https://www.turismodebolsillo.com.ar/archivo/media/novedades/thumbs/1564530024_verano2.jpg">
+            </li>
+            <li>
+                <img class="img-fluid hidden" id="84" src="https://img.freepik.com/foto-gratis/hermoso-camino-madera-que-impresionantes-arboles-coloridos-bosque_181624-5840.jpg">
+            </li>
+        </ul>
+            
+            <div id="boton">
+                <button id="ver-mas">Ver más</button>
+            </div>
+            <div id="boton">
+                <button id="ver-menos">Ver menos</button>
+            </div>
 
+        <div id="lightbox" class="lightbox">
+            <button class="prev">&lt;</button>
+            <img id="lightbox-img" src="" alt="Imagen Ampliada">
+            <button class="next">&gt;</button>
+        </div>
+          </div>
+          </div>
+        </div>
     </div>
 
+    <script>
+        const gallery = document.querySelectorAll("ul img");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
 
+        let currentIndex = 0;
 
+        function openLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = gallery[currentIndex].src;
+            lightbox.classList.add("show");
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove("show");
+        }
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % gallery.length;
+            lightboxImg.src = gallery[currentIndex].src;
+        }
+
+        function showPrevImage() {
+            currentIndex = (currentIndex - 1 + gallery.length) % gallery.length;
+            lightboxImg.src = gallery[currentIndex].src;
+        }
+
+        gallery.forEach((img, index) => {
+            img.addEventListener("click", () => openLightbox(index));
+        });
+
+        lightbox.addEventListener("click", (e) => {
+            if (e.target !== lightboxImg && e.target !== prevButton && e.target !== nextButton) {
+                closeLightbox();
+            }
+        });
+
+        nextButton.addEventListener("click", showNextImage);
+        prevButton.addEventListener("click", showPrevImage);
+
+        document.addEventListener("keydown", (e) => {
+            if (lightbox.classList.contains("show")) {
+                if (e.key === "ArrowRight") showNextImage();
+                if (e.key === "ArrowLeft") showPrevImage();
+                if (e.key === "Escape") closeLightbox();
+            }
+        });
+    </script>
+
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
