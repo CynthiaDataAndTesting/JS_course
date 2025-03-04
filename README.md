@@ -1,4 +1,6 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=06358A&background=E4E2DD&center=true&vCenter=true&width=900&lines=Galer%C3%ADa+de+im%C3%A1genes)](https://git.io/typing-svg)
+<div align = center>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=06358A&background=E4E2DD&center=true&vCenter=true&width=900&lines=Galer%C3%ADa+de+im%C3%A1genes" alt="Typing SVG" /></a>
+</div>
 
 <h1>Objetivo de la tarea</h1>
 <p>
