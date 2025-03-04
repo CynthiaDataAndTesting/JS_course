@@ -1,5 +1,6 @@
 <div align = center>
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=06358A&background=E4E2DD&center=true&vCenter=true&width=900&lines=Galer%C3%ADa+de+im%C3%A1genes" alt="Typing SVG" /></a>
+  <a href="https://cynthiadataandtesting.github.io/JS_course/"><img alt="Static Badge" src="https://img.shields.io/badge/Mira%20la%20galer%C3%ADa%20en%20Github%20Pages!%20-%20%2306358a?style=flat-square"></a>
 </div>
 
 <h1>Objetivo de la tarea</h1>
@@ -49,3 +50,8 @@
         </ul>
       </li>
 </ul>
+
+<br>
+<br>
+
+
